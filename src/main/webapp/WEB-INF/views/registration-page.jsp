@@ -24,6 +24,9 @@
 				<form:option value="female">Female</form:option>
 			</form:select><br/>
 			
+			<label>Date Of Birth</label><br>
+			<form:input type="Date" path="dateOfBirth" id="dob"/><br>
+			
 			<label>Address </label><br>
 			<form:textarea rows="5" cols="40" path="address" id="address"/><br>
 			
