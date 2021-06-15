@@ -7,7 +7,11 @@
 <title>Login</title>
 </head>
 <body>
-	<div>
+	<jsp:include page="header.jsp"></jsp:include>
+	<div style="margin-left:35%;">
+		<% if(request.getAttribute("info")!=null){ %>
+		<%= request.getAttribute("info") %>
+		<%} %>
 		<h1>Login</h1>
 		<form action="processLogin" method="post">
 		
