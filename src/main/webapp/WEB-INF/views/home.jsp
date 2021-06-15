@@ -10,6 +10,9 @@
 	<jsp:include page="header.jsp"></jsp:include>
 	<div style="margin-left:25%">
 		<h1 style="margin-left: 20%">Home Page</h1>
+		<% if(request.getAttribute("info")!=null){ %>
+			<%= request.getAttribute("info") %>
+		<%} %>
 		<a href="logout" style="float: right;margin-right: 10%">Logout</a>
 		<ul style="list-style-type: none;">
 			<br>
