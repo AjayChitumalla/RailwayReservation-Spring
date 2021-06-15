@@ -27,16 +27,16 @@
 		<div style="margin-left: 25%">Available seats : <%=train.getAvailableSeats() %> </div>
 		<span style="margin-left: 30%">Fare : Rs.<b><%=train.getFare() %>.00</b></span><br>
 		<label>Number of seats : </label>
-		<input type="number" name="no_of_seats" style="width:80px" ><br>
+		<input type="number" name="numberOfSeats" style="width:80px" ><br>
 		<label>Select the class   : </label>
-		<select name="class" style="width:90px">
+		<select name="ticketClass" style="width:90px">
 			<option value="-">-</option>
 			<option value="First class">First class</option>
 			<option value="Economy">Economy</option>
 			<option value="Sleeper">Sleeper</option>
 		</select><br>
-		<input type="hidden" name="train_no" value=<%= train.getTrainNumber() %>>
-		<input type="hidden" name="train_fare" value=<%= train.getFare() %>>
+		<input type="hidden" name="trainNumber" value=<%= train.getTrainNumber() %>>
+		<input type="hidden" name="trainFare" value=<%= train.getFare() %>>
 		<button style="float: right">Book Ticket</button>
 	</form><br>
 </body>
